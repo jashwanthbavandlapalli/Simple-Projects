@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Advanced Search</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                margin: 0;
+            }
+            .search-container{
+                text-align: left;
+            }
+            .search-container div{
+                margin-bottom: 10px;
+            }
+            input[type="text"]{
+                width: 400px;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                outline: none;
+            }
+            input[type="submit"]{
+                padding: 10px 20px;
+                margin-top: 10px;
+                border: none;
+                border-radius: 5px;
+                background-color: #4285F4;
+                color: white;
+                cursor: pointer;
+            }
+            .links{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .links a {
+                margin-left: 10px;
+                text-decoration: none;
+                color: #4285F4;
+            }
+            .google{
+                display: flex;
+                width: 20%;
+                height: 20%;
+                text-align: center;
+                padding-bottom: 20px;
+                margin-right: 140px;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div class="links">
+            <a href="C:\Users\hp\OneDrive\Desktop\Github-projects\intro-to-html\intro-tohtml\Google\google.html">Google search</a>
+            <a href="C:\Users\hp\OneDrive\Desktop\Github-projects\intro-to-html\intro-tohtml\Google\images.html">Image Search</a>
+        </div>
+        <div class = "google">
+            <img src="C:\Users\hp\OneDrive\Desktop\Github-projects\intro-to-html\intro-tohtml\Google\Google logo.png" alt="Google">
+        </div>
+        <div class="search-container">
+            <form action="https://www.google.com/search">
+                <div>
+                    <label for="all">Find pages with... all these words:</label>
+                    <input type="text" id="all" name="as_q">
+                </div>
+                <div>
+                    <label for="exact">Find pages with... this exact word or phrase:</label>
+                    <input type="text" id="exact" name="as_epq">
+                </div>
+                <div>
+                    <label for="any">Find pages with... any of these words:</label>
+                    <input type="text" id="any" name="as_oq">
+                </div>
+                <div>
+                    <label for="none">Find pages with... none of these words:</label>
+                    <input type="text" id="none" name="as_eq">
+                </div>
+                <div>
+                    <input type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>

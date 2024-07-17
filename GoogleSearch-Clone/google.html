@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Google Search
+        </title>
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                height: 100vh;
+                font-family: Arial, sans-serif;
+                margin: 0;
+            }
+            .search-container{
+                text-align: center;
+            }
+            input[type="text"]{
+                width: 400px;
+                padding: 10px;
+                border-radius: 20px;
+                border: 1px solid #ccc;
+                outline: none;
+            }
+            input[type="submit"]{
+                padding: 10px 20px;
+                margin-top: 10px;
+                border: none;
+                border-radius: 20px;
+                background-color: #4285F4;
+                color: white;
+                cursor: pointer;
+            }
+            .links{
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
+            .links{
+                margin-left: 10px;
+                text-decoration: none;
+                color: #4285F4;
+            }
+            .google{
+                display: flex;
+                width: 20%;
+                height: 20%;
+                text-align: center;
+                padding-bottom: 20px;
+                margin-right: 140px;
+
+}
+
+        </style>
+        <link>
+    </head>
+    <body>
+        <div class="links">
+            <a href="C:\Users\hp\OneDrive\Desktop\Github-projects\intro-to-html\intro-tohtml\Google\images.html">Image Search</a> 
+            <a href="C:\Users\hp\OneDrive\Desktop\Github-projects\intro-to-html\intro-tohtml\Google\advanced.html">Advanced Search</a>
+        </div>
+        <div class = "google">
+            <img src="C:\Users\hp\OneDrive\Desktop\Github-projects\intro-to-html\intro-tohtml\Google\Google logo.png" alt="Google">
+        </div>
+        <div class="search-container">
+            <form action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Search Google">
+            <div>
+                <input type="submit" value="Google Search">
+                <input type="submit" value="I'm Feeling Lucky" onclick="this.form.action='https://www.google.com/search?btnI=I&q=' + this.form.q.value;"> 
+            </div>
+            </form></div>
+            
+    </body>
+</html>
