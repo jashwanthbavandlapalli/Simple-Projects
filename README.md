@@ -29,7 +29,7 @@ o Technologies: HTML, CSS
 Installation
 To get started with these projects, follow these steps:
 1. Clone the repository:
-> git clone https://github.com/your-username/simple-projects.git
+> git clone https://github.com/jashwanth2003/simple-projects.git
 2. Navigate to the project directory:
 > cd simple-projects
 Usage
